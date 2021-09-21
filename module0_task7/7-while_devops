@@ -1,0 +1,6 @@
+#!/bin/bash
+val=0
+while [ $val -lt 10 ]; do
+	echo "DevOps"
+	val=$(($val + 1))
+done
