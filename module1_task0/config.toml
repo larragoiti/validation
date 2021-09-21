@@ -1,0 +1,4 @@
+baseURL = 'https://larragoiti.github.io'
+languageCode = 'en-us'
+title = 'Awesome Inc.'
+theme = "ananke"
