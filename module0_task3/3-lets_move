@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ls | grep '\<[[:upper:]]' > salida.txt
+while IFS= read -r line
+do
+  mv  -f $line /tmp/u
+done < salida.txt
+rm salida.txt
