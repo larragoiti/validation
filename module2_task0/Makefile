@@ -5,14 +5,14 @@ run:
 	./awesome-api >./awesome.log 2>&1 &
 
 stop:
-	kill "$(pgrep awesome-api)"
+	#kill $(pgrep awesome-api)
+	killall awesome-api
 
 clean:
-	rm awesome-api awesome-api.log
+	rm awesome-api awesome.log
 
 test:
-	curl http://localhost:9999
-	curl http://localhost:9999/health
+	curl http://localhost:9999 && curl http://localhost:9999/health
 
 help:
 	echo "help: ..."
