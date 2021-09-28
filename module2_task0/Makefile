@@ -5,7 +5,7 @@ run:
 	./awesome-api >./awesome.log 2>&1 &
 
 stop:
-	kill $$(pgrep awesome-api)
+	kill $$(pgrep -f awesome-api)
 
 clean:
 	rm awesome-api awesome.log
