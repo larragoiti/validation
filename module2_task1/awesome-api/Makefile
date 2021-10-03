@@ -22,4 +22,3 @@ test: ## test
 
 lint: ## Lint
 	golangci-lint run
-
